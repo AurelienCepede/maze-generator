@@ -1,0 +1,79 @@
+.Case-t, .Case-b, .Case-l, .Case-r,
+.Case-t-r, .Case-l-b, .Case-t-l, .Case-r-b,
+.Case-l-r, .Case-t-b,.Case-t-l-r, .Case-t-l-b,
+.Case-t-r-b, .Case-l-r-b, .Case-t-l-r-b{
+    position: relative;
+}
+.Case-t::before, .Case-b::before, .Case-l::before, .Case-r::before,
+.Case-t-r::before, .Case-l-b::before, .Case-t-l::before, .Case-r-b::before,
+.Case-l-r::before, .Case-t-b::before,.Case-t-l-r::before, .Case-t-l-b::before,
+.Case-t-r-b::before, .Case-l-r-b::before, .Case-t-l-r-b::before {
+    content: '';
+    border:solid 1px black;
+    position: absolute;
+    width:100%;
+    height:100%;
+    left:0;
+}
+.Case-t::before {
+    border-top-color : transparent;
+}
+.Case-b::before {
+    border-bottom-color : transparent;
+}
+.Case-l::before {
+    border-left-color : transparent;
+}
+.Case-r::before {
+    border-right-color : transparent;
+}
+.Case-t-r::before {
+    border-top-color : transparent;
+    border-right-color : transparent;
+}
+.Case-l-b::before {
+    border-left-color : transparent;
+    border-bottom-color : transparent;
+}
+.Case-t-l::before {
+    border-top-color : transparent;
+    border-left-color : transparent;
+}
+.Case-r-b::before {
+    border-right-color : transparent;
+    border-bottom-color : transparent;
+}
+.Case-l-r::before {
+    border-left-color : transparent;
+    border-right-color : transparent;
+}
+.Case-t-b::before {
+    border-top-color : transparent;
+    border-bottom-color : transparent;
+}
+.Case-t-l-r::before {
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+.Case-t-l-b::before {
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+}
+.Case-t-r-b::before {
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+}
+.Case-l-r-b::before {
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+}
+.Case-t-l-r-b::before {
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+}
