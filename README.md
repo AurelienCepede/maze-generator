@@ -1,4 +1,4 @@
-# Labyrinthe generator
+# Maze generator
 
 ## Todo
 * Typescript

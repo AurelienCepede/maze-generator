@@ -13,7 +13,8 @@
     position: absolute;
     width:100%;
     height:100%;
-    left:0;
+    left:-1px;
+    top:-1px;
 }
 .Case-t::before {
     border-top-color : transparent;

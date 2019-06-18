@@ -3,17 +3,16 @@ import "./Case.css";
 
 interface CaseProps {
     direction: string,
-    width: string,
-    height: string,
-    title: string,
+    width: number,
+    height: number,
 }
 
-function Case(props: CaseProps) {
+function Case({direction, width, height} : CaseProps) {
     const style: Object = {
-        width: props.width,
-        height: props.height,
+        width: width + "px",
+        height: height + "px",
     };
-    return <div title={props.title} className={'Case' + props.direction} style={style}/>;
+    return <div className={'Case' + direction} style={style}/>;
 }
 
 export default Case;

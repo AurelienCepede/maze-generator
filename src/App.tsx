@@ -1,11 +1,13 @@
 import React from 'react';
 import './App.css';
-import Labyrinthe from "./Labyrinthe";
+import Maze from "./Maze";
+import generateMaze from "./MazeGenerator";
 
 const App: React.FC = () => {
+  const __SIZE = 20;
   return (
     <div className="App">
-      <Labyrinthe/>
+      <Maze width={__SIZE} height={__SIZE} cases={generateMaze(__SIZE, __SIZE)}/>
     </div>
   );
 };
